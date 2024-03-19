@@ -1,5 +1,4 @@
 """Defines URL patterns for learning_logs."""
-
 from django.urls import path
 from . import views
 
@@ -14,4 +13,10 @@ urlpatterns = [
 
     # Detail page for a single topic.
     path('topics/<int:topic_id>/', views.topic, name='topic'),
+
+    #Page for adding a new topic
+    path('new_topic/', views.new_topic, name='new_topic'),
+
+    #Page for editing entry of the topic
+    path('edit_entry/<int:entry_id>/', views.edit_entry, name='edit_entry')
 ]
