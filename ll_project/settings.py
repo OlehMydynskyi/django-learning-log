@@ -27,12 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = 'learning_logs:index'
+LOGOUT_REDIRECT_URL = 'learning_logs:index'
 
 # Application definition
 
 INSTALLED_APPS = [
     #My apps
     'learning_logs',
+    'accounts',
     
     #Default Django apps
     'django.contrib.admin',
