@@ -34,11 +34,14 @@ LOGIN_URL = 'accounts:login'
 # Application definition
 
 INSTALLED_APPS = [
-    #My apps
+    # My apps.
     'learning_logs',
     'accounts',
     
-    #Default Django apps
+    # Third party apps.
+    'django_bootstrap5',
+
+    # Default Django apps.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
